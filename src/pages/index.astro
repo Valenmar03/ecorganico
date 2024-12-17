@@ -1,12 +1,11 @@
 ---
-import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 import ProductsSection from '../components/Products/ProductsSection.astro';
 
 ---
 
 <Layout title="Inicio">
-	<Header/>
+	
 	<section class="bg-[url('/img/hero-img.jpg')] bg-cover bg-center h-screen flex items-center">
 		<div class="container mx-auto text-center text-white px-6">
 			<h1 class="text-4xl md:text-6xl font-bold mb-4">Fertilizantes e Insecticidas Orgánicos</h1>
@@ -15,5 +14,5 @@ import ProductsSection from '../components/Products/ProductsSection.astro';
 		</div>
 	</section>
 	<ProductsSection/>
-	  
+	
 </Layout>
