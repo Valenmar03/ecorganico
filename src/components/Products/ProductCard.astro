@@ -14,17 +14,21 @@ const { title, description, mainImg, variants } = product.data;
         <ProductTitleDesc
             product={product}
         />
+    <a href={`/product/${id}`}>
         <img
             src={`/img/main/${mainImg}`}
             alt={`Imagen ${title}`}
             class="rounded-md w-96"
-        />
+            />
+            </a>
     ) : (
+    <a href={`/${id}`}>
         <img
-            src={`/img/main/${mainImg}`}
-            alt={`Imagen ${title}`}
-            class="rounded-md w-96"
+        src={`/img/main/${mainImg}`}
+        alt={`Imagen ${title}`}
+        class="rounded-md w-96"
         />
+    </a>
         <ProductTitleDesc
             product={product}
         />

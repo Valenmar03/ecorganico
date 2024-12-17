@@ -13,4 +13,5 @@ const products = defineCollection({
     })
 })
 
+export type Product = typeof products
 export const collections = { products }
