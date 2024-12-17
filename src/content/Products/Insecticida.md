@@ -2,7 +2,7 @@
 title: Insecticida
 supplier: DiatomiD
 description: Insecticida Organico 100% Tierra de Diatomeas
-mainImg: img-prueba.jpg
+mainImg: Insecticida.jpg
 images: 
     - Hola
     - Chau

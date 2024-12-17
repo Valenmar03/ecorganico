@@ -1,4 +1,6 @@
 ---
+import ProductTitleDesc from "./ProductTitleDesc.astro";
+
 const { product, index } = Astro.props;
 const { id, body } = product;
 const { title, description, mainImg, variants } = product.data;
@@ -9,49 +11,23 @@ const { title, description, mainImg, variants } = product.data;
 >
 {
     index % 2 === 0 ? (
-        <div>
-            <h3
-                class="text-3xl font-semibold uppercase text-center "
-            >
-                {title}
-            </h3>
-            <p class="prose text-gray-900">{body}</p>
-            <p>Variantes: </p>
-            <ul>
-                {variants.map((variant : String) =>
-                <li>
-                    {variant}
-                </li>
-                )}
-            </ul>
-        </div>
+        <ProductTitleDesc
+            product={product}
+        />
         <img
-            src={`/img/${mainImg}`}
+            src={`/img/main/${mainImg}`}
             alt={`Imagen ${title}`}
-            class="rounded-md"
+            class="rounded-md w-96"
         />
     ) : (
         <img
-            src={`/img/${mainImg}`}
+            src={`/img/main/${mainImg}`}
             alt={`Imagen ${title}`}
-            class="rounded-md"
+            class="rounded-md w-96"
         />
-        <div>
-            <h3
-                class="text-3xl font-semibold uppercase text-center "
-            >
-                {title}
-            </h3>
-            <p class="prose text-gray-900">{body}</p>
-            <p>Variantes: </p>
-            <ul>
-                {variants.map((variant : String) =>
-                <li>
-                    {variant}
-                </li>
-                )}
-            </ul>
-        </div>
+        <ProductTitleDesc
+            product={product}
+        />
    )
 }
    

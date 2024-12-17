@@ -1,0 +1,16 @@
+---
+
+const {product} = Astro.props
+const {title} = product.data
+const { body } = product
+---
+
+
+<div>
+    <h3
+        class="text-3xl font-semibold uppercase text-center "
+    >
+        {title}
+    </h3>
+    <p class="prose text-gray-900">{body}</p>
+</div>
