@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content"
+import ProductCard from './ProductCard.astro'
+
+const products = await getCollection('products')
+---
+
+
+<section id="productos" class="bg-gray-100">
+    {
+        products.map((product, index) => 
+            <ProductCard
+                product={product}
+                index={index}
+            />
+        )
+    }
+</section>

@@ -2,7 +2,7 @@
 title: Fertilizante
 supplier: DiatomiD
 description: Fertilizante Organico 100% Tierra de Diatomeas
-mainImg: holis
+mainImg: img-prueba.jpg
 images: 
     - Hola
     - Chau
