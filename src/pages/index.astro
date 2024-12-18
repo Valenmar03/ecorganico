@@ -1,20 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Products from '../components/Products.astro';
-import Nosotros from '../components/Nosotros.astro';
-
+import Layout from "../layouts/Layout.astro";
+import Products from "../components/Products.astro";
+import Nosotros from "../components/Nosotros.astro";
 ---
 
 <Layout title="Inicio">
-	
-	<section class="bg-[url('/img/hero-img.jpg')] bg-cover bg-center h-screen flex items-center">
-		<div class="container mx-auto text-center text-white px-6">
-			<h1 class="text-4xl md:text-6xl font-bold mb-4">Fertilizantes e Insecticidas Orgánicos</h1>
-			<p class="text-lg md:text-2xl mb-8">Soluciones 100% naturales para un mundo mejor.</p>
-			<a href="#productos" class="bg-green-200 text-green-900 px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-300 duration-200">Conocé Nuestros Productos</a>
-		</div>
-	</section>
-	<Nosotros/>
-	<Products/>
-	
+   <section
+      class="bg-[url('/img/hero-img.jpg')] bg-cover bg-center h-screen flex items-center relative"
+   >
+      <div
+         class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40"
+      >
+         <div class="container mx-auto text-center text-white px-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+               Fertilizantes e Insecticidas Orgánicos
+            </h1>
+            <p class="text-lg md:text-2xl mb-8">
+               Soluciones 100% naturales para un mundo mejor.
+            </p>
+            <a
+               href="#productos"
+               class="bg-green-200 text-green-900 px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-300 duration-200"
+               >Conocé Nuestros Productos</a
+            >
+         </div>
+      </div>
+   </section>
+   <Nosotros />
+   <div
+      class="bg-[url('/img/truckField.jpg')] bg-cover h-72 bg-center bg-opacity-65"
+   >
+      <div class="w-full bg-black h-full bg-opacity-50"></div>
+   </div>
+   <Products />
 </Layout>

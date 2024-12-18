@@ -1,19 +1,30 @@
 ---
-import { getCollection } from "astro:content"
-import ProductCard from './Products/ProductCard.astro'
+import { getCollection } from "astro:content";
+import ProductCard from "./Products/ProductCard.astro";
 
-const products = await getCollection('products')
+const products = await getCollection("products");
 ---
 
-
-<section id="productos">
-    
-    {
-        products.map((product, index) => 
-            <ProductCard
-                product={product}
-                index={index}
-            />
-        )
-    }
+<section id="productos" class="scroll-mt-[5rem] py-14">
+   <div class="w-full mx-auto space-y-5 mb-12">
+      <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
+         DiatomiD
+      </h2>
+      <p class="text-lg prose text-center mx-auto">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ab
+         nihil nesciunt et omnis porro. Nostrum eum odit earum debitis ratione
+         illo inventore nesciunt fugiat, beatae rem molestias quae
+         reprehenderit. Ad modi enim, optio similique quia itaque tempora
+         accusamus! Voluptatum fugit, expedita sunt assumenda accusamus
+         accusantium voluptates dolore quidem, et totam eum blanditiis quaerat
+         nobis! Tempore eligendi ullam accusantium debitis!
+      </p>
+   </div>
+   <div class="flex flex-wrap w-4/5 mx-auto justify-around">
+      {
+         products.map((product) => (
+            <ProductCard product={product} />
+         ))
+      }
+   </div>
 </section>
