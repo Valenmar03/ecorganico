@@ -10,12 +10,12 @@ const products = await getCollection("products");
       <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
          DiatomiD
       </h2>
-      <p class="text-lg prose text-center mx-auto">
-         Diatomid es un producto natural elaborado a partir de tierra de diatomeas, compuesto por los restos fosilizados de algas unicelulares llamadas diatomeas. Este mineral se utiliza principalmente como insecticida ecológico y fertilizante natural.
-         Al ser un producto natural y no tóxico, Diatomid es seguro para humanos, animales y plantas. Sin embargo, es importante seguir las instrucciones de uso proporcionadas por el fabricante para garantizar su eficacia y seguridad.
+      <p class="text-lg prose text-gray-800 text-center mx-auto">
+         <strong class="text-green-600">Diatomid</strong> es un producto natural elaborado a partir de tierra de diatomeas, compuesto por los restos fosilizados de algas unicelulares llamadas diatomeas. Este mineral se utiliza principalmente como <strong class="text-green-800">insecticida ecológico</strong> y <strong class="text-green-800">fertilizante natural</strong>.
+         Al ser un producto natural y no tóxico, Diatomid es <strong class="text-green-600">seguro</strong> para <strong class="text-green-600"> humanos, animales y plantas</strong>. Sin embargo, es importante seguir las instrucciones de uso proporcionadas por el fabricante para garantizar su eficacia y seguridad.
       </p>
    </div>
-   <div class="flex flex-wrap w-4/5 mx-auto justify-around">
+   <div class=" flex flex-wrap gap-2 w-4/5 mx-auto justify-center">
       {
          products.map((product) => (
             <ProductCard product={product} />
