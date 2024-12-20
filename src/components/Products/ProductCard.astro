@@ -8,7 +8,7 @@ const { title, description, mainImg } = product.data;
    <img
       src={`/img/main/${mainImg}`}
       alt={`Imagen ${title}`}
-      class="rounded-md w-full max-w-72 mx-auto"
+      class="rounded-md w-full max-w-64 mx-auto"
    />
    <div class="p-3">
       <h4 class="text-lg font-semibold uppercase text-gray-800">
@@ -17,7 +17,7 @@ const { title, description, mainImg } = product.data;
       <p>{description}</p>
    </div>
    <a href={`/product/${id}`} class="mt-auto">
-      <button class="bg-green-900 p-3 w-full rounded mt-2 hover:bg-green-800 duration-200 text-green-200 font-bold text-lg">
+      <button class="bg-green-900 text-green-200 px-4 py-2 rounded hover:bg-green-800 duration-200 p-3 w-full  mt-2 font-bold text-lg">
          Ver más
       </button>
    </a>
