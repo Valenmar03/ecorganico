@@ -1,13 +1,17 @@
 ---
+import { Image } from "astro:assets";
 const {product} = Astro.props
 const { id } = product;
 const { title, description, mainImg } = product.data;
+
 ---
 
 <div class="flex flex-col gap-3 p-3 bg-white shadow-xl max-w-80">
-   <img
+   <Image
       src={`/img/main/${mainImg}`}
       alt={`Imagen ${title}`}
+      width={300}
+      height={300}
       class="rounded-md w-full max-w-64 mx-auto"
    />
    <div class="p-3">

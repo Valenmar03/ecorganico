@@ -1,12 +1,17 @@
+---
+import { Image } from "astro:assets";
+
+---
+
 <section id="nosotros" class="bg-green-100 p-20 scroll-mt-[5rem]">
    <h2 class="text-center text-5xl uppercase font-bold mb-10 text-green-950">
       ¿Quienes Somos?
    </h2>
    <div
-      class="flex flex-col 2xl:flex-row w-4/5 gap-10 justify-between md:w-2/3 mx-auto md:gap-20 items-center text-green-900"
+      class="flex flex-col 2xl:flex-row w-full gap-10 justify-between md:w-2/3 mx-auto md:gap-20 items-center text-green-900"
    >
       <div class="space-y-5 text-xl">
-         <p class="text-2xl md:text-xl prose text-green-900 whitespace-pre-line">
+         <p class="text-lg md:text-xl prose text-green-900 whitespace-pre-line">
             Somos una empresa familiar dedicada a la <span class="font-semibold"
             >distribución</span
          > de
@@ -16,11 +21,11 @@
             Con un compromiso firme hacia la calidad y la confianza, nos esforzamos por brindar un servicio cercano y eficiente, ayudando a construir un futuro más verde y equilibrado.
          </p>
          <div class="space-y-2 flex justify-around">
-            <img src="/svg/Plant.svg" alt="" class="mr-3" />
-            <img src="/svg/Truck.svg" alt="" class="mr-3" />
-            <img src="/svg/People.svg" alt="" class="mr-3" />
+            <Image src="/svg/Plant.svg" alt="Plant svg" width={300} height={300} class="mr-3 w-20" />
+            <Image src="/svg/Truck.svg" alt="Truck svg" width={300} height={300} class="mr-3 w-20" />
+            <Image src="/svg/People.svg" alt="People svg" width={300} height={300} class="mr-3 w-20" />
          </div>
       </div>
-      <img src="/img/us.jpg" alt="" class="w-[32rem] rounded-md" />
+      <Image src="/img/us.jpg" alt="Imagen campo" width={300} height={300} class="w-[32rem] rounded-md" />
    </div>
 </section>

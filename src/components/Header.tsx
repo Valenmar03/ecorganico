@@ -22,11 +22,14 @@ export default function Header() {
                      src="/LogoTexto.png"
                      alt="Logo Ecorganico"
                      className="w-44 hidden md:block"
+                     loading="lazy"
                   />
                   <img
                      src="/Logo.png"
                      alt="Logo Ecorganico"
                      className="w-14 md:hidden"
+                     loading="lazy"
+
                   />
                </a>
                <button

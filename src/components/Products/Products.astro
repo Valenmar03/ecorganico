@@ -6,13 +6,13 @@ import ProductsList from "./ProductsList";
 const products = await getCollection("products");
 ---
 
-<section id="productos" class="flex w-full justify-around gap-10">
+<section id="productos" class="flex flex-col w-full justify-around gap-10">
    <div class="py-14">
       <div class="mx-auto space-y-5 mb-12">
          <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
             DiatomiD
          </h2>
-         <p class="text-lg prose text-gray-800 text-center mx-auto">
+         <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
             <strong class="text-green-600">Diatomid</strong> es un producto natural
             elaborado a partir de tierra de diatomeas, compuesto por los restos fosilizados
             de algas unicelulares llamadas diatomeas. Este mineral se utiliza principalmente
@@ -47,7 +47,7 @@ const products = await getCollection("products");
          <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
             Nutrigea
          </h2>
-         <p class="text-lg prose text-gray-800 text-center mx-auto">
+         <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
             Nutrigea es un <strong class="text-green-600"
                >fertilizante ecológico</strong
             > diseñado para mejorar el equilibrio natural del suelo y promover un

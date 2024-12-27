@@ -32,6 +32,7 @@ export default function ProductsList({ children }: ProductsListProps) {
           className={`size-6 cursor-pointer duration-100 ${
             !show ? "-rotate-90" : "rotate-0"
           }`}
+          loading="lazy"
         />
       </button>
       <div

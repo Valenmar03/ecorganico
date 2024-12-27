@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 const phoneNumber = '+5491159606813';
 const defaultMessage = encodeURIComponent('Hola! Me gustaría recibir más información sobre sus productos.');
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
@@ -20,12 +21,12 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
             Comunicate con nosotros mediante los siguientes canales. Te responderemos a la brevedad.
           </p>
           <div class="space-y-4 text-lg">
-            <p class="flex items-center gap-2 text-gray-700">
-              <img src="/svg/Mail.svg" alt="Mail Svg">
+            <p class="flex flex-wrap items-center gap-2 text-gray-700">
+              <Image src="/svg/Mail.svg" alt="Mail Svg" width={300} height={300} class="w-8" />
               <strong class="mr-1">Email:</strong> ecorganico.distribuidora@gmail.com
             </p>
             <p class="flex items-center gap-2 text-gray-700">
-              <img src="/svg/Phone.svg" alt="Phone Svg">
+              <Image src="/svg/Phone.svg" alt="Phone Svg" width={300} height={300} class="w-8"/>
               
               <strong class="mr-1">Teléfono:</strong> +54 9 11 5960-6813
             </p>
@@ -33,9 +34,9 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              class="flex justify-center gap-2 w-full text-lg bg-green-200 text-green-900 px-4 py-2 rounded hover:bg-green-300 duration-200 mt-auto"
+              class="flex justify-center items-center gap-2 w-full text-lg bg-green-200 text-green-900 px-4 py-2 rounded hover:bg-green-300 duration-200 mt-auto"
             >
-              <img src="/svg/Wpp.svg" alt="WhatsApp Svg">
+              <img src="/svg/Wpp.svg" alt="WhatsApp Svg" class="w-8" loading="lazy">
               WhatsApp
             </a>
           </div>
