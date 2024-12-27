@@ -42,7 +42,7 @@ export default function Header() {
                style={{ maxHeight: menuHeight }}
                className={`md:hidden overflow-hidden transition-[max-height] duration-500 ease-in-out w-full mt-5 md:mt-0`}
             >
-               <ul className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-gray-600 text-xl md:text-lg">
+               <ul className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-6 text-gray-600 text-2xl ">
                   <li>
                      <a
                         href="#inicio"
