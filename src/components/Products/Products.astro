@@ -6,9 +6,9 @@ import ProductsList from "./ProductsList";
 const products = await getCollection("products");
 ---
 
-<section id="productos" class="scroll-mt-[5rem]">
+<section id="productos" class="flex w-full justify-around gap-10">
    <div class="py-14">
-      <div class="w-full mx-auto space-y-5 mb-12">
+      <div class="mx-auto space-y-5 mb-12">
          <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
             DiatomiD
          </h2>
@@ -27,20 +27,22 @@ const products = await getCollection("products");
             seguridad.
          </p>
       </div>
-      <ProductsList client:load>
-         <div class="flex flex-wrap gap-2 w-4/5 mx-auto justify-center">
-            {
-               products
-                  .filter(
-                     (product) =>
-                        product.data.supplier === "DiatomiD" && product
-                  )
-                  .map((product) => <ProductCard product={product} />)
-            }
-         </div>
-      </ProductsList>
+      <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
+         <ProductsList client:load>
+            <div class="flex flex-wrap gap-2 justify-center">
+               {
+                  products
+                     .filter(
+                        (product) =>
+                           product.data.supplier === "DiatomiD" && product
+                     )
+                     .map((product) => <ProductCard product={product} />)
+               }
+            </div>
+         </ProductsList>
+      </div>
    </div>
-   <div class="bg-white py-14">
+   <div class="py-14 bg-white">
       <div class="w-full mx-auto space-y-5 mb-12">
          <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
             Nutrigea
@@ -61,17 +63,19 @@ const products = await getCollection("products");
             >, incluyendo el suelo, el agua y la biodiversidad circundante.
          </p>
       </div>
-      <ProductsList client:load>
-         <div class="flex flex-wrap gap-2 w-4/5 mx-auto justify-center">
-            {
-               products
-                  .filter(
-                     (product) =>
-                        product.data.supplier === "DiatomiD" && product
-                  )
-                  .map((product) => <ProductCard product={product} />)
-            }
-         </div>
-      </ProductsList>
+      <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
+         <ProductsList client:load>
+            <div class="flex flex-wrap gap-2 justify-center">
+               {
+                  products
+                     .filter(
+                        (product) =>
+                           product.data.supplier === "DiatomiD" && product
+                     )
+                     .map((product) => <ProductCard product={product} />)
+               }
+            </div>
+         </ProductsList>
+      </div>
    </div>
 </section>
