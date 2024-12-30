@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 import type { Product } from "../../content.config";
 import Layout from "../../layouts/Layout.astro";
 
@@ -13,9 +14,15 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props;
 const { id } = product;
-const { title } = product.data
+const { title, mainImg } = product.data
 ---
 
 <Layout title={title}>
-    
+   <Image
+      src={`/img/main/${mainImg}`}
+      alt={`Imagen ${title}`}
+      width={300}
+      height={300}
+      class="rounded-md w-full max-w-64 mx-auto"
+   />
 </Layout>
