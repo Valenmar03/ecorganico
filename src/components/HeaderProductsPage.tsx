@@ -139,6 +139,20 @@ export default function HeaderProductsPage({
                         </ul>
                      </details>
                   </li>
+                  <li>
+                     <a
+                        href={whatsappLink}
+                        target="_blank"
+                        className="bg-green-200 text-green-900 px-4 py-2 rounded hover:bg-green-300 duration-200 flex gap-2 items-center"
+                     >
+                        <img
+                           src="/svg/Wpp.svg"
+                           alt="WhatsApp Svg"
+                           className="w-8"
+                        />
+                        WhatsApp
+                     </a>
+                  </li>
                </ul>
             </nav>
 
