@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
-const phoneNumber = '+5491159606813';
-const defaultMessage = encodeURIComponent('Hola! Me gustaría recibir más información sobre sus productos.');
+const phoneNumber = "+5491159606813";
+const defaultMessage = encodeURIComponent(
+   "Hola! Me gustaría recibir más información sobre sus productos."
+);
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
 ---
 
@@ -12,7 +14,19 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
          <h3 class="text-xl font-bold mb-4 text-white">Contacto</h3>
          <p><strong>Email:</strong> ecorganico.distribuidora@gmail.com</p>
          <p><strong>Teléfono:</strong> +54 9 11 5960-6813</p>
-         <a href={whatsappLink} class="flex items-center gap-2 hover:text-gray-200"><Image src="/svg/Wpp.svg" alt="WhatsApp Svg" width={300} height={300} class="w-8" /> WhatsApp </a>
+
+         <a
+            href={whatsappLink}
+            target="_blank"
+            class="flex items-center gap-2 hover:text-gray-200"
+            ><Image
+               src="/svg/Wpp.svg"
+               alt="WhatsApp Svg"
+               width={300}
+               height={300}
+               class="w-8"
+            /> WhatsApp
+         </a>
       </div>
 
       <div>
