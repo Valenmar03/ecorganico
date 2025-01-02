@@ -1,5 +1,6 @@
 import type { InferEntrySchema, RenderedContent } from "astro:content";
 import { useState } from "react";
+import DropdownNav from "./DropdownNav";
 
 type HeaderProductsPageProps = {
    products: {
@@ -20,6 +21,8 @@ export default function HeaderProductsPage({
    );
    const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
    const [openNav, setOpenNav] = useState(false);
+   const [openDiatomid, setOpenDiatomid] = useState(false);
+   const [openNutrigea, setOpenNutrigea] = useState(false);
 
    return (
       <header className="bg-white shadow-md fixed top-0 w-full z-50">
@@ -59,8 +62,8 @@ export default function HeaderProductsPage({
                            Inicio
                         </a>
                      </li>
-                     <li>DiatomiD</li>
-                     <li>Nutrigea</li>
+                     <DropdownNav supplier="DiatomiD" products={products} />
+                     <DropdownNav supplier="Nutrigea" products={products} />
                   </ul>
                   <a
                      href={whatsappLink}
