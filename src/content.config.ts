@@ -8,6 +8,7 @@ export const productsSchema = z.object({
     mainImg: z.string(),
     images: z.array(z.string()),
     variants: z.array(z.string()),
+    fullDescription: z.string(),
 })
 
 const products = defineCollection({

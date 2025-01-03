@@ -9,16 +9,38 @@ images:
     - Como Estas
 variants: 
     - 25 kg.
+fullDescription: DiatomiD Sanidad Animal es un producto natural y ecológico elaborado a partir de tierra de diatomeas, diseñado para mejorar la salud y el bienestar de los animales de granja.
 ---
-DiatomiD Sanidad Animal es un producto natural y ecológico elaborado a partir de tierra de diatomeas, diseñado para mejorar la salud y el bienestar de los animales de granja.
+### **Beneficios Principales**
 
-Beneficios principales
-Control de parásitos intestinales: Contribuye a la eliminación de parásitos internos en animales, mejorando su estado sanitario y promoviendo un crecimiento saludable.
-Mejora en la producción: Reduce la carga parasitaria, lo que incrementa la productividad de aves de corral, vacas, cabras, cerdos, ovejas y otros animales de granja.
-Enriquecimiento del alimento: Puede mezclarse con el alimento de los animales, mejorando su valor nutritivo y equilibrando su dieta.
-Control de moscas en el entorno: Aplicado sobre las heces de los animales, actúa como insecticida mecánico, ayudando a controlar la proliferación de moscas y mejorando las condiciones sanitarias.
-Modo de uso
-Suplemento alimenticio: Incorporar una cantidad adecuada al alimento de los animales, según las recomendaciones específicas para cada especie.
-Aplicación en excrementos: Espolvorear el producto sobre las heces de los animales regularmente para controlar la población de moscas.
-Seguridad y consideraciones
-DiatomiD Sanidad Animal es un producto no tóxico, seguro para los animales, los humanos y el medio ambiente. Su uso regular contribuye a prácticas de cría más sostenibles y al bienestar general de los animales.
+1. **Control de Parásitos Intestinales**  
+   Ayuda a eliminar parásitos internos en animales, mejorando su salud y favoreciendo un crecimiento saludable.
+
+2. **Incremento en la Producción**  
+   Reduce la carga parasitaria, aumentando la productividad de animales de granja como aves de corral, vacas, cabras, cerdos y ovejas.
+
+3. **Enriquecimiento del Alimento**  
+   Puede mezclarse con el alimento de los animales para mejorar su valor nutritivo y equilibrar su dieta.
+
+4. **Control de Moscas en el Entorno**  
+   Aplicado sobre las heces de los animales, actúa como insecticida mecánico, controlando la proliferación de moscas y mejorando las condiciones sanitarias.
+
+---
+
+### **Modo de Uso**
+
+- **Como Suplemento Alimenticio**  
+  Incorpora una cantidad adecuada al alimento de los animales según las recomendaciones específicas para cada especie.
+
+- **Aplicación en Excrementos**  
+  Espolvorea el producto regularmente sobre las heces de los animales para controlar la población de moscas en el entorno.
+
+---
+
+### **Seguridad y Consideraciones**
+
+- **Producto Seguro**  
+  DiatomiD Sanidad Animal es un producto no tóxico, completamente seguro para los animales, los humanos y el medio ambiente.
+
+- **Contribución a la Sostenibilidad**  
+  Su uso regular fomenta prácticas de cría más sostenibles y mejora el bienestar general de los animales.
