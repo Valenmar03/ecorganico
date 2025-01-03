@@ -57,7 +57,7 @@ export default function DropdownNav({ supplier, products }: DropdownNavProps) {
                   .map((product) => (
                      <li key={product.id}>
                         <a
-                           href={`#${product.id}`}
+                           href={`/product/${product.id}`}
                            className="hover:text-green-600"
                         >
                            {product.data.title}
