@@ -15,11 +15,11 @@ variants:
     - Micronizado
 fullDescription: Diatomid es un insecticida natural y ecológico elaborado a partir de tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Este producto se destaca por su eficacia en el control de plagas y su seguridad para humanos, animales y plantas.
 ---
-
-
 ### **Modo de Acción**
 
 Diatomid elimina insectos mediante acción física. Sus partículas microscópicas perforan el exoesqueleto de los insectos, provocando su deshidratación y muerte. Este mecanismo impide que las plagas desarrollen resistencia al producto.
+
+---
 
 ### **Aplicaciones**
 

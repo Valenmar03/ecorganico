@@ -30,39 +30,29 @@ const {
 <Layout title={title}>
    <HeaderProductsPage client:load products={products} />
    <main
-      class="mt-20 mb-10 w-2/3 mx-auto flex flex-col md:flex-row justify-center bg-white p-10 rounded-md shadow-lg"
+      class="mt-20 mb-10 w-2/3 mx-auto bg-white p-10 rounded-md shadow-lg"
    >
-      <section>
+      <section class="flex flex-col md:flex-row md:justify-between gap-10">
          <Image
             src={`/img/main/${mainImg}`}
             alt={`Imagen ${title}`}
             width={300}
             height={300}
-            class="rounded-md md:w-4/5 md:max-w-7xl"
+            class="rounded-md md:w-1/2 md:max-w-7xl"
          />
+         <div class="w-full mx-auto">
+            <h1 class="text-7xl font-bold">
+               {title}
+               <span class="text-2xl text-gray-500 mb-1">{supplier}</span>
+            </h1>
+            <article class="prose">
+               <p class="mb-5">{description}</p>
+               <p class="text-xl text-gray-900">{fullDescription}</p>
+            </article>
+         </div>
       </section>
-      <section class="w-full mx-auto">
-         <h1 class="text-7xl font-bold">
-            {title}
-            <span class="text-2xl text-gray-500 mb-1">{supplier}</span>
-         </h1>
-         <article>
-            <p class="mb-5">{description}</p>
-            {fullDescription}
-         </article>
-         <!-- <div class="flex justify-center">
-            {
-               images.map((img) => (
-                  <Image
-                     src={`/img/products/${img}`}
-                     alt={`Imagen ${title}`}
-                     width={300}
-                     height={300}
-                     class="rounded-md w-1/3 mx-auto"
-                  />
-               ))
-            }
-         </div> -->
-      </section>
+      <article class="prose prose-lg mt-10">
+         <Content />
+      </article>
    </main>
 </Layout>
