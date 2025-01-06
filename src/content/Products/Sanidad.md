@@ -8,8 +8,11 @@ images:
     - Chau
     - Como Estas
 variants: 
-    - 25 kg.
-fullDescription: DiatomiD Sanidad Animal es un producto natural y ecológico elaborado a partir de tierra de diatomeas, diseñado para mejorar la salud y el bienestar de los animales de granja.
+    - 20 kg.
+fullDescription: >
+    <p class="text-lg"><span class="text-green-500 font-bold">DiatomiD Sanidad Animal</span> es un producto natural y ecológico elaborado a partir de tierra de diatomeas, diseñado para mejorar la salud y el bienestar de los animales de granja. Destaca por su capacidad para <span class="text-green-700 font-bold">controlar parásitos internos y externos</span>, promoviendo un ambiente más saludable y productivo.</p> 
+    <p class="text-lg">Este producto puede mezclarse con el alimento de los animales, ayudando a eliminar parásitos intestinales y mejorando su nutrición. También es eficaz en el control de moscas y otros insectos en los alrededores, al aplicarse directamente sobre las heces, reduciendo la proliferación de plagas.</p> 
+    <p class="text-lg">Al ser <span class="text-green-700 font-bold">natural y no tóxico</span>, es seguro para los animales, las personas y el medio ambiente. <span class="text-green-500 font-bold">DiatomiD Sanidad Animal</span> es ideal para productores que buscan una solución sostenible para el manejo de la salud animal y el control de plagas en entornos rurales.</p>    
 ---
 ### **Beneficios Principales**
 

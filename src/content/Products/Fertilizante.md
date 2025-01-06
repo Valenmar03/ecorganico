@@ -11,11 +11,20 @@ variants:
    - 2 kg.
    - 25 kg.
 fullDescription: >
-    <p class="text-lg">DiatomiD es un <span class="text-green-500 font-bold">fertilizante natural y ecológico</span> derivado de la tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Gracias a su origen natural, este producto ofrece <span class="text-green-700 font-bold">múltiples beneficios tanto para el suelo como para las plantas</span>, ayudando enriquecer el suelo y fomentar un crecimiento saludable en las plantas, promoviendo una agricultura más sostenible. </p>
-
-     <p class="text-lg"><span class="text-green-500 font-bold">DiatomiD</span> no solo fomenta un crecimiento saludable en las plantas, sino que también refuerza su resistencia frente a factores de estrés, como condiciones climáticas adversas y la presencia de plagas. Por estas características, es una solución ideal para agricultores que buscan maximizar la productividad de sus cultivos sin comprometer el <span class="text-green-700 font-bold">equilibrio ecológico.</span></p>
+    <p class="text-lg">
+      DiatomiD es un <span class="text-green-500 font-bold">fertilizante natural y ecológico</span> derivado de la tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Gracias a su origen natural, este producto ofrece 
+      <span class="text-green-700 font-bold">múltiples beneficios tanto para el suelo como para las plantas</span>, ayudando a enriquecer el suelo y fomentar un crecimiento saludable en las plantas, promoviendo una agricultura más sostenible.
+    </p>
     
-     <p class="text-lg">Este fertilizante es compatible con diversas prácticas agrícolas, desde cultivos orgánicos hasta convencionales, que respeta tanto al medio ambiente como a las comunidades agrícolas.</p>
+    <p class="text-lg">
+      <span class="text-green-500 font-bold">DiatomiD</span> no solo fomenta un crecimiento saludable en las plantas, sino que también refuerza su resistencia frente a factores de estrés, como condiciones climáticas adversas y la presencia de plagas. Por estas características, es una solución ideal para agricultores que buscan maximizar la productividad de sus cultivos sin comprometer el 
+      <span class="text-green-700 font-bold">equilibrio ecológico.</span>
+    </p>
+    
+    <p class="text-lg">
+      Este fertilizante es compatible con diversas prácticas agrícolas, desde cultivos orgánicos hasta convencionales, y respeta tanto al medio ambiente como a las comunidades agrícolas.
+    </p>
+
 
 ---
 

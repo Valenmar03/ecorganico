@@ -3,15 +3,21 @@ title: Absorbente Industrial
 supplier: DiatomiD
 description: Absorbente Industrial Organico 100% Tierra de Diatomeas
 mainImg: Absorbente.jpg
-images: 
-    - Hola
-    - Chau
-    - Como Estas
-variants: 
-    - 5 kg.
-    - 25 kg.
-fullDescription: El Absorbente Industrial DiatomiD es un producto natural y ecológico elaborado a partir de tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Se caracteriza por su alta capacidad de absorción y eficacia en el control de derrames en entornos industriales.
+images:
+   - Hola
+   - Chau
+   - Como Estas
+variants:
+   - 5 kg.
+   - 25 kg.
+fullDescription: >
+    <p class="text-lg">El <span class="text-green-500 font-bold">Absorbente Industrial DiatomiD</span> es un producto natural y ecológico elaborado a partir de tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Destaca por su <span class="text-green-700 font-bold">alta capacidad de absorción</span> y eficacia en el control de derrames en entornos industriales.</p> 
+
+    <p class="text-lg">Este absorbente encapsula líquidos como hidrocarburos, aceites y químicos, transformándolos en sólidos fáciles de manipular y desechar. También proporciona un efecto antideslizante, mejorando la seguridad en el lugar de trabajo y reduciendo riesgos.</p> 
+    
+    <p class="text-lg">Al ser <span class="text-green-700 font-bold">natural y no tóxico</span>, es una solución sostenible que protege a las personas y el medio ambiente. El <span class="text-green-500 font-bold">Absorbente Industrial DiatomiD</span> es ideal para talleres, estaciones de servicio e industrias que buscan eficiencia y seguridad en el manejo de derrames.</p>
 ---
+
 ### **Características y Beneficios**
 
 1. **Alta Capacidad de Absorción**  
