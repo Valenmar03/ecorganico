@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import type { Product } from "../../content.config";
 import Layout from "../../layouts/Layout.astro";
 import HeaderProductsPage from "../../components/HeaderProductsPage.tsx";
+import DescriptionText from "../../components/Products/DescriptionText.tsx";
 
 export async function getStaticPaths() {
    const products = await getCollection("products");
@@ -47,7 +48,9 @@ const {
             </h1>
             <article class="prose">
                <p class="mb-5">{description}</p>
-               <p class="text-xl text-gray-900">{fullDescription}</p>
+               <DescriptionText
+                  description={fullDescription}
+               />
             </article>
          </div>
       </section>
