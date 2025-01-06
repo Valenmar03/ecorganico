@@ -73,6 +73,3 @@ DiatomiD es totalmente compatible con otros fertilizantes, tanto químicos como 
 -  **Agricultura Sostenible:**  
    Su uso regular fomenta prácticas agrícolas sostenibles y contribuye a la producción de alimentos libres de químicos dañinos.
 
----
-
-Esta versión mejora la claridad y estructura, utilizando listas y un lenguaje más fluido para destacar los puntos clave. Si necesitas más ajustes o personalizaciones, ¡avísame! 😊

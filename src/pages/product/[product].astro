@@ -30,16 +30,14 @@ const {
 
 <Layout title={title}>
    <HeaderProductsPage client:load products={products} />
-   <main
-      class="mt-20 mb-10 w-2/3 mx-auto bg-white p-10 rounded-md shadow-lg"
-   >
-      <section class="flex flex-col md:flex-row md:justify-between gap-10">
+   <main class="mt-20 md:mb-10 md:w-4/5 mx-auto bg-white p-10 rounded-md shadow-lg">
+      <section class="flex flex-col xl:flex-row md:justify-between gap-10">
          <Image
             src={`/img/main/${mainImg}`}
             alt={`Imagen ${title}`}
             width={300}
             height={300}
-            class="rounded-md md:w-1/2 md:max-w-7xl"
+            class="rounded-md w-full xl:w-1/2 md:max-w-7xl object-cover"
          />
          <div class="w-full mx-auto">
             <h1 class="text-7xl font-bold">
@@ -48,9 +46,14 @@ const {
             </h1>
             <article class="prose">
                <p class="mb-5">{description}</p>
-               <DescriptionText
-                  description={fullDescription}
-               />
+               <DescriptionText description={fullDescription} />
+               <div class="flex flex-wrap gap-2">
+                  {
+                     variants.map((variant) => (
+                        <p class=" border border-green-700 px-5 py-1 rounded-full text-green-700 font-bold">{variant}</p>
+                     ))
+                  }
+               </div>
             </article>
          </div>
       </section>
