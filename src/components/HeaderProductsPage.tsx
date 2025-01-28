@@ -67,12 +67,8 @@ export default function HeaderProductsPage({
                            Inicio
                         </a>
                      </li>
-                     {diatomidExists && (
-                        <DropdownNav supplier="DiatomiD" products={products} />
-                     )}
-                     {nutrigeaExists && (
-                        <DropdownNav supplier="Nutrigea" products={products} />
-                     )}
+                     <DropdownNav supplier="DiatomiD" products={products} />
+                     <DropdownNav supplier="Nutrigea" products={products} />
                   </ul>
                   <a
                      href={whatsappLink}

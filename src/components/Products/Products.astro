@@ -4,19 +4,10 @@ import ProductCard from "./ProductCard.astro";
 import ProductsList from "./ProductsList";
 
 const products = await getCollection("products");
-
-const diaotmidExists = products.find(
-   (product) => product.data.supplier === "DiatomiD"
-);
-
-const nutrigeaExists = products.find(
-   (product) => product.data.supplier === "Nutrigea"
-);
 ---
 
 <section id="productos" class="flex flex-col w-full justify-around gap-10">
-   {
-      diaotmidExists && (
+  
          <div class="py-14">
             <div class="mx-auto space-y-5 mb-12">
                <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
@@ -55,11 +46,7 @@ const nutrigeaExists = products.find(
                </ProductsList>
             </div>
          </div>
-      )
-   }
-   {
-      nutrigeaExists && (
-         <div class="py-14 bg-white">
+         <!-- <div class="py-14 bg-white">
             <div class="w-full mx-auto space-y-5 mb-12">
                <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
                   Nutrigea
@@ -97,7 +84,5 @@ const nutrigeaExists = products.find(
                   </div>
                </ProductsList>
             </div>
-         </div>
-      )
-   }
+         </div> -->
 </section>
