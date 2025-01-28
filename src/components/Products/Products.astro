@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard.astro";
 import ProductsList from "./ProductsList";
 
 const products = await getCollection("products");
+console.log(products)
 ---
 
 <section id="productos" class="flex flex-col w-full justify-around gap-10">
