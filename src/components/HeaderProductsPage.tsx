@@ -21,8 +21,13 @@ export default function HeaderProductsPage({
    );
    const whatsappLink = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
    const [openNav, setOpenNav] = useState(false);
-   const [openDiatomid, setOpenDiatomid] = useState(false);
-   const [openNutrigea, setOpenNutrigea] = useState(false);
+
+   const diatomidExists = products.find(
+      (product) => product.data.supplier === "DiatomiD"
+   );
+   const nutrigeaExists = products.find(
+      (product) => product.data.supplier === "Nutrigea"
+   );
 
    return (
       <header className="bg-white shadow-md fixed top-0 w-full z-50">
@@ -62,8 +67,12 @@ export default function HeaderProductsPage({
                            Inicio
                         </a>
                      </li>
-                     <DropdownNav supplier="DiatomiD" products={products} />
-                     <DropdownNav supplier="Nutrigea" products={products} />
+                     {diatomidExists && (
+                        <DropdownNav supplier="DiatomiD" products={products} />
+                     )}
+                     {nutrigeaExists && (
+                        <DropdownNav supplier="Nutrigea" products={products} />
+                     )}
                   </ul>
                   <a
                      href={whatsappLink}

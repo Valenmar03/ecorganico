@@ -4,78 +4,100 @@ import ProductCard from "./ProductCard.astro";
 import ProductsList from "./ProductsList";
 
 const products = await getCollection("products");
+
+const diaotmidExists = products.find(
+   (product) => product.data.supplier === "DiatomiD"
+);
+
+const nutrigeaExists = products.find(
+   (product) => product.data.supplier === "Nutrigea"
+);
 ---
 
 <section id="productos" class="flex flex-col w-full justify-around gap-10">
-   <div class="py-14">
-      <div class="mx-auto space-y-5 mb-12">
-         <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
-            DiatomiD
-         </h2>
-         <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
-            <strong class="text-green-600">Diatomid</strong> es un producto natural
-            elaborado a partir de tierra de diatomeas, compuesto por los restos fosilizados
-            de algas unicelulares llamadas diatomeas. Este mineral se utiliza principalmente
-            como <strong class="text-green-800">insecticida ecológico</strong> y
-            <strong class="text-green-800">fertilizante natural</strong>. Al ser
-            un producto natural y no tóxico, Diatomid es <strong
-               class="text-green-600">seguro</strong
-            > para <strong class="text-green-600">
-               humanos, animales y plantas</strong
-            >. Sin embargo, es importante seguir las instrucciones de uso
-            proporcionadas por el fabricante para garantizar su eficacia y
-            seguridad.
-         </p>
-      </div>
-      <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
-         <ProductsList client:load>
-            <div class="flex flex-wrap gap-2 justify-center">
-               {
-                  products
-                     .filter(
-                        (product) =>
-                           product.data.supplier === "DiatomiD" && product
-                     )
-                     .map((product) => <ProductCard product={product} />)
-               }
+   {
+      diaotmidExists && (
+         <div class="py-14">
+            <div class="mx-auto space-y-5 mb-12">
+               <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
+                  DiatomiD
+               </h2>
+               <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
+                  <strong class="text-green-600">Diatomid</strong> es un
+                  producto natural elaborado a partir de tierra de diatomeas,
+                  compuesto por los restos fosilizados de algas unicelulares
+                  llamadas diatomeas. Este mineral se utiliza principalmente
+                  como{" "}
+                  <strong class="text-green-800">insecticida ecológico</strong>{" "}
+                  y<strong class="text-green-800">fertilizante natural</strong>.
+                  Al ser un producto natural y no tóxico, Diatomid es{" "}
+                  <strong class="text-green-600">seguro</strong> para{" "}
+                  <strong class="text-green-600">
+                     humanos, animales y plantas
+                  </strong>
+                  . Sin embargo, es importante seguir las instrucciones de uso
+                  proporcionadas por el fabricante para garantizar su eficacia y
+                  seguridad.
+               </p>
             </div>
-         </ProductsList>
-      </div>
-   </div>
-   <div class="py-14 bg-white">
-      <div class="w-full mx-auto space-y-5 mb-12">
-         <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
-            Nutrigea
-         </h2>
-         <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
-            Nutrigea es un <strong class="text-green-600"
-               >fertilizante ecológico</strong
-            > diseñado para mejorar el equilibrio natural del suelo y promover un
-            <strong class="text-green-800"
-               >crecimiento sostenible y saludable en los cultivos</strong
-            >. Este producto es el resultado de un profundo compromiso con la
-            agricultura responsable, que busca respetar y preservar el medio
-            ambiente mientras optimiza la productividad agrícola. Al utilizar
-            componentes derivados de fuentes sostenibles, este fertilizante no
-            solo alimenta a las plantas, sino que también <strong
-               class="text-green-600"
-               >fortalece la salud del ecosistema agrícola</strong
-            >, incluyendo el suelo, el agua y la biodiversidad circundante.
-         </p>
-      </div>
-      <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
-         <ProductsList client:load>
-            <div class="flex flex-wrap gap-2 justify-center">
-               {
-                  products
-                     .filter(
-                        (product) =>
-                           product.data.supplier === "Nutrigea" && product
-                     )
-                     .map((product) => <ProductCard product={product} />)
-               }
+            <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
+               <ProductsList client:load>
+                  <div class="flex flex-wrap gap-2 justify-center">
+                     {products
+                        .filter(
+                           (product) =>
+                              product.data.supplier === "DiatomiD" && product
+                        )
+                        .map((product) => (
+                           <ProductCard product={product} />
+                        ))}
+                  </div>
+               </ProductsList>
             </div>
-         </ProductsList>
-      </div>
-   </div>
+         </div>
+      )
+   }
+   {
+      nutrigeaExists && (
+         <div class="py-14 bg-white">
+            <div class="w-full mx-auto space-y-5 mb-12">
+               <h2 class="text-6xl uppercase font-bold text-gray-800 text-center">
+                  Nutrigea
+               </h2>
+               <p class="mx-5 md:text-lg prose text-gray-800 text-center md:mx-auto">
+                  Nutrigea es un{" "}
+                  <strong class="text-green-600">fertilizante ecológico</strong>{" "}
+                  diseñado para mejorar el equilibrio natural del suelo y
+                  promover un
+                  <strong class="text-green-800">
+                     crecimiento sostenible y saludable en los cultivos
+                  </strong>
+                  . Este producto es el resultado de un profundo compromiso con
+                  la agricultura responsable, que busca respetar y preservar el
+                  medio ambiente mientras optimiza la productividad agrícola. Al
+                  utilizar componentes derivados de fuentes sostenibles, este
+                  fertilizante no solo alimenta a las plantas, sino que también{" "}
+                  <strong class="text-green-600">
+                     fortalece la salud del ecosistema agrícola
+                  </strong>
+                  , incluyendo el suelo, el agua y la biodiversidad circundante.
+               </p>
+            </div>
+            <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
+               <ProductsList client:load>
+                  <div class="flex flex-wrap gap-2 justify-center">
+                     {products
+                        .filter(
+                           (product) =>
+                              product.data.supplier === "Nutrigea" && product
+                        )
+                        .map((product) => (
+                           <ProductCard product={product} />
+                        ))}
+                  </div>
+               </ProductsList>
+            </div>
+         </div>
+      )
+   }
 </section>
