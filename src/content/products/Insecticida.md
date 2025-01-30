@@ -1,7 +1,7 @@
 ---
 title: Insecticida
 supplier: DiatomiD
-description: Insecticida Organico 100% Tierra de Diatomeas
+description: Insecticida Organico 100% Tierra de Diatomeas.
 mainImg: Insecticida.jpg
 images: 
     - Hola
@@ -14,7 +14,7 @@ variants:
     - Talquera
     - Micronizado
 fullDescription: >
-    <p class="text-lg"><span class="text-green-500 font-bold">DiatomiD</span> es un insecticida natural y ecológico elaborado a partir de tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Este producto se destaca por su <span class="text-green-700 font-bold">eficacia en el control de plagas</span> y su seguridad para humanos, animales y plantas.</p> 
+    <p class="text-lg"><span class="text-green-700 font-bold">DiatomiD</span> es un insecticida natural y ecológico <span class="text-green-500 font-bold"> aprobado por SENASA</span> como insumo comercial apto para la producción orgánica. Elaborado a partir de tierra de diatomeas, un mineral compuesto por los restos fosilizados de algas unicelulares. Este producto se destaca por su <span class="text-green-700 font-bold">eficacia en el control de plagas</span> y su seguridad para humanos, animales y plantas.</p> 
     <p class="text-lg">Gracias a su acción mecánica, DiatomiD elimina insectos al deshidratar su exoesqueleto, lo que lo convierte en una solución efectiva y sin químicos tóxicos. Es ideal para controlar plagas como hormigas, cucarachas, pulgones y garrapatas, tanto en el hogar como en entornos agrícolas.</p> 
     <p class="text-lg">Al ser <span class="text-green-700 font-bold">natural y no tóxico</span>, este insecticida respeta el medio ambiente y es seguro para el uso en jardines, cultivos orgánicos y áreas frecuentadas por niños o mascotas. <span class="text-green-500 font-bold">DiatomiD</span> es la elección perfecta para quienes buscan un control de plagas efectivo y sostenible.</p>            
 ---
