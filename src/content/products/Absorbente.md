@@ -1,7 +1,7 @@
 ---
 title: Absorbente Industrial
 supplier: DiatomiD
-description: Absorbente Industrial Organico 100% Tierra de Diatomeas
+description: Absorbente Industrial 100% Tierra de Diatomeas
 mainImg: Absorbente.jpg
 images:
    - Hola

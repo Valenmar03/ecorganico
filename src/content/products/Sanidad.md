@@ -1,7 +1,7 @@
 ---
 title: Sanidad Animal
 supplier: DiatomiD
-description: Sanidad Animal Organico 100% Tierra de Diatomeas
+description: Sanidad Animal 100% Tierra de Diatomeas
 mainImg: Insecticida.jpg
 images: 
     - Hola

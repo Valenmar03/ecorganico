@@ -40,7 +40,7 @@ Diatomid elimina insectos mediante acción física. Sus partículas microscópic
   Espolvorea una capa fina y uniforme sobre las áreas afectadas, asegurando el contacto directo con los insectos.
 
 - **Aplicación Líquida**  
-  Mezcla 20 gramos de Diatomid en 10 litros de agua y pulveriza sobre las plantas o superficies infestadas.
+  El producto puede aplicarse diluyendo el insecticida en agua y pulverizandolo. Las cantidades varían según el cultivo 
 
 ---
 
