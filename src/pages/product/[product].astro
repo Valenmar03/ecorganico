@@ -16,6 +16,7 @@ export async function getStaticPaths() {
 const products = await getCollection("products");
 const { product } = Astro.props;
 const { Content } = await render(product);
+export const prerender = true;
 const { id, body } = product;
 const {
    title,
@@ -30,7 +31,7 @@ const {
 
 <Layout title={title}>
    <HeaderProductsPage client:load products={products} />
-   <main class="mt-20 md:mb-10 md:w-4/5 mx-auto bg-white p-10 rounded-md shadow-lg">
+   <main class="mt-20 md:mb-10 md:w-4/6 mx-auto bg-white p-10 rounded-md shadow-lg">
       <section class="flex flex-col xl:flex-row md:justify-between gap-10">
          <Image
             src={`/img/main/${mainImg}`}
