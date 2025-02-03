@@ -1,12 +1,38 @@
 ---
 import { Image } from "astro:assets";
-const {product} = Astro.props
+const { product } = Astro.props;
 const { id } = product;
 const { title, description, mainImg } = product.data;
-
 ---
 
-<div class="flex flex-col gap-3 p-3 bg-white shadow-xl max-w-80">
+<div class="max-w-72 group overflow-hidden relative">
+   <div class="overflow-hidden">
+      <a class="cursor-pointer" href={`/product/${id}`}>
+         <Image
+            src={`/img/main/${mainImg}`}
+            alt={`Imagen ${title}`}
+            width={300}
+            height={300}
+            class="w-full hover:scale-110 duration-300"
+         />
+      </a>
+   </div>
+   <div
+      class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-black/70 via-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-3"
+   >
+      <div class="flex flex-col w-full text-white">
+         <p class=" text-xl font-semibold">{title}</p>
+         <a href={`/product/${id}`} class="mt-auto w-full">
+            <button
+               class=" text-lg hover:text-gray-300 duration-200"
+            >
+               Ver más
+            </button>
+         </a>
+      </div>
+   </div>
+</div>
+<!-- <div class="flex flex-col gap-3 p-3 bg-white shadow-xl max-w-80">
    <Image
       src={`/img/main/${mainImg}`}
       alt={`Imagen ${title}`}
@@ -25,4 +51,4 @@ const { title, description, mainImg } = product.data;
          Ver más
       </button>
    </a>
-</div>
+</div> -->

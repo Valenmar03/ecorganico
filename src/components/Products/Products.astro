@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import ProductCard from "./ProductCard.astro";
-import ProductsList from "./ProductsList";
 
 const products = await getCollection("products");
 ---
@@ -32,8 +31,7 @@ const products = await getCollection("products");
                </p>
             </div>
             <div class="flex flex-wrap gap-2 mx-auto justify-center w-4/5">
-               <ProductsList client:load>
-                  <div class="flex flex-wrap gap-2 justify-center">
+                  <div class="flex flex-wrap justify-center gap-2">
                      {products
                         .filter(
                            (product) =>
@@ -43,7 +41,6 @@ const products = await getCollection("products");
                            <ProductCard product={product} />
                         ))}
                   </div>
-               </ProductsList>
             </div>
          </div>
          <!-- <div class="py-14 bg-white">
